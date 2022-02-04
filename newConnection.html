@@ -2,38 +2,66 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>New Connections</title>
-        <body>
-            <form>
-                <label for="topic">Topic</label>
-                <input type="text" value="topic"><br>
-
-                <label for="title">Title</label>
-                <input type="text" value="title"><br>
-
-                <label for="host">Host</label>
-                <input type="text" value="host"><br>
-
-                <label for="details">Details</label>
-                <input type="text" rows="5" value="description"><br>
-
-                <label for="where">Where</label>
-                <input type="text" value="location"><br>
-
-                <label for="when">When</label>
-                <input type="date" value="mm/dd/yyyy"><br>
-
-                <label for="start">Start</label>
-                <input type="time" value="12:00 AM"><br>
-
-                <label for="end">End</label>
-                <input type="time" value="11:59 PM"><br>
-
-                <label for="imgUrl">Image URL</label>
-                <input type="text" value="imageURL"><br>
-
-                <input type="submit" value="Create Connection">
-            </form>
-        </body>
+        <link rel="stylesheet" type="text/css" href="Project.css">
+        <title>Home Page</title>
     </head>
+    <body>
+    <header>
+        <a href="index.html"><img src="logo.jpg" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="newConnection.html">Start a new connection</a></li>
+                <li><a href="newConnection.html">Login</a></li>
+                <li><a href="newConnection.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+            <div class="connections">
+                <ul>
+                    <li><a href="connections.html">Connections</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <form class="form">
+                    <label for="topic" class="label">Topic: </label>
+                    <input type="text"  id="topic" class="input" placeholder="topic"><br>
+                    <br>
+                    <label for="title" class="label">Title: </label>
+                    <input type="text" id="title" class="input" placeholder="title"><br>
+                    <br>
+                    <label for="host" class="label">Host: </label>
+                    <input type="text" id="host" class="input" placeholder="host"><br>
+                    <br>
+                    <label for="details" class="label">Details: </label>
+                    <input type="text" id="details" class="input" placeholder="description"><br>
+                    <br>
+                    <label for="where" class="label">Where: </label>
+                    <input type="text" id="where" class="input" placeholder="location"><br>
+                    <br>
+                    <label for="when" class="label">When: </label>
+                    <input type="date" id="when" class="input"><br>
+                    <br>
+                    <label for="startTime" class="label">Start Time: </label>
+                    <input type="time" id="startTime" class="input"><br>
+                    <br>
+                    <label for="endTime" class="label">End Time: </label>
+                    <input type="time" id="endTime"class="input"><br>
+                    <br>
+                    <label for="imgUrl" class="label">Image URL: </label>
+                    <input type="text" id="imgUrl" class="input" placeholder="imageURL"><br>
+                    <br>
+                    <input type="submit" value="Create Connection" class="createConnection">
+                </form>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="newConnection.html">About</a></li>
+                    <li><a href="newConnection.html">Contact</a></li>
+                </ul>
+            </footer>
+        </body>
+
+    
 </html>
